@@ -1,26 +1,49 @@
-# AuthAPI
+# Auth API Project
 
-FastAPI-based authentication API using SQLite + SQLAlchemy and JWT.
+This project is a FastAPI application that provides user authentication features, including user registration, login, and protected routes. It uses SQLAlchemy for database interactions and JWT for token-based authentication.
 
-## Run locally
+## Project Structure
 
-1. Install dependencies
-
-```bash
-pip install -r requirements.txt
+```
+AuthAPI/
+├── main.py        # FastAPI application
+├── images/        # Screenshots used in the README
+└── README.md      # Project documentation
 ```
 
-2. Start the server
+## Features
 
-```bash
-uvicorn main:app --reload
-```
+- User registration
+- User login
+- Protected routes with JWT authentication
 
-3. Open Swagger UI
+## Setup Instructions
 
-- http://127.0.0.1:8000/docs
+1. **Clone the repository:**
 
-## Screenshots
+	```bash
+	git clone https://github.com/Shareef91/AuthAPI.git
+	cd AuthAPI
+	```
+
+2. **Install dependencies:**
+
+	```bash
+	pip install -r requirements.txt
+	```
+
+3. **Run the application:**
+
+	```bash
+	uvicorn main:app --reload
+	```
+
+4. **Open the API docs:**
+
+	- Swagger UI: `/docs`
+	- ReDoc: `/redoc`
+
+## Images
 
 ![Register](images/Register.png)
 ![Token Login](images/TokenLogin.png)
